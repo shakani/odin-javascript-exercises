@@ -31,8 +31,12 @@ const power = function(base, exponent) {
   return p;
 };
 
-const factorial = function() {
-	
+const factorial = function(n) {
+	let p = 1;
+  for(let i = 1; i <= n; i++) {
+    p *= i;
+  }
+  return p;
 };
 
 // Do not edit below this line
