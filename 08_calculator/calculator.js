@@ -22,8 +22,13 @@ const multiply = function(arr) {
   return p;
 };
 
-const power = function() {
-	
+const power = function(base, exponent) {
+	let p = 1;
+  while (exponent > 0) {
+    p *= base;
+    exponent -= 1;
+  }
+  return p;
 };
 
 const factorial = function() {
