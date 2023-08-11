@@ -15,11 +15,12 @@ const sum = function(arr) {
 };
 
 const multiply = function(arr) {
-  let p = 1;
-  for (let i = 0; i < arr.length; i++) {
-    p *= arr[i];
-  }
-  return p;
+  // let p = 1;
+  // for (let i = 0; i < arr.length; i++) {
+  //   p *= arr[i];
+  // }
+  // return p;
+  return arr.reduce((p, val) => p*val, 1);
 };
 
 const power = function(base, exponent) {
